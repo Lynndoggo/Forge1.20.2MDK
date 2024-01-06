@@ -16,6 +16,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
+//comment :D
 @Mod(Bajak.MOD_ID)
 public class Bajak {
     public static final String MOD_ID = "bajak";
