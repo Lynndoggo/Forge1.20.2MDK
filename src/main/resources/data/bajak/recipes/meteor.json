@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "bajak:meteor_splinter"
+    }
+  },
+  "result": {
+    "item": "bajak:meteor_block"
+  }
+}

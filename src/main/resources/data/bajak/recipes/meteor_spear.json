@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "m  ",
+    " # ",
+    "  #"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "m": {
+      "item": "bajak:meteor_splinter"
+    }
+  },
+  "result": {
+    "item": "bajak:meteor_spear"
+  }
+}

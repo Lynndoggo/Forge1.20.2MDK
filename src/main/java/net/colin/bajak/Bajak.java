@@ -1,6 +1,9 @@
 package net.colin.bajak;
 
 import com.mojang.logging.LogUtils;
+import net.colin.bajak.block.ModBlocks;
+import net.colin.bajak.item.ModCreativeModeTabs;
+import net.colin.bajak.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,11 +28,17 @@ public class Bajak {
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register((modEventBus));
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        modEventBus.addListener(this::addCreative);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -37,6 +46,8 @@ public class Bajak {
 
     }
 
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+    }
 
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents

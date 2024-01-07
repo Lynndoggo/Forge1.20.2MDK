@@ -1,0 +1,11 @@
+{
+"type": "minecraft:blasting",
+"category": "misc",
+"cookingtime": 600,
+"experience": 1,
+"group": "meteor_splinter",
+"ingredient": {
+"item": "bajak:meteor_block"
+},
+"result": "bajak:meteor_splinter"
+}
