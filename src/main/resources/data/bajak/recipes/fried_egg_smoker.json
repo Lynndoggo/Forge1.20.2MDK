@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "category": "misc",
+  "cookingtime": 50,
+  "experience": 0.1,
+  "group": "fried_egg",
+  "ingredient": {
+    "item": "minecraft:egg"
+  },
+  "result": "bajak:fried_egg"
+}

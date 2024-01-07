@@ -1,8 +1,11 @@
 package net.colin.bajak.item;
 
 import net.colin.bajak.Bajak;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -22,6 +25,8 @@ public class ModItems {
     public static final RegistryObject<Item> METEOR_SPLINTER = ITEMS.register("meteor_splinter",
             () -> new Item(new Item.Properties().stacksTo(16)));
 
+    public static final RegistryObject<Item> FRIED_EGG = ITEMS.register("fried_egg",
+            () -> new Item(new Item.Properties().stacksTo(64).food(ModFoods.FRIED_EGG)));
 
 
     public static void register(IEventBus eventBus) {
